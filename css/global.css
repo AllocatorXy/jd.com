@@ -1,0 +1,7 @@
+.arrow-down{
+	background: url(../imgs/arrow-down.png) no-repeat;
+	display: inline-block;
+	width: 10px;
+	height: 5px;
+	position: relative;
+}

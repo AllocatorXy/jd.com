@@ -1,0 +1,215 @@
+header{
+	width: 100%;
+	background-color: #f1f1f1;
+	height: 31px;
+	position: fixed;
+	top: 0;
+	color: #666;
+	font-size: 12px;
+	line-height: 30px;
+	user-select: none;
+	.active{
+		padding-bottom: 1px;
+		background-color: #fff;
+		border-color: #ccc;
+		z-index: 1;
+	}
+	.show{
+		display: block;
+	}
+	.hidden{
+		display: none;
+	}
+	h2{
+		font-size: 12px;
+		margin-left: 8px;
+		position: relative;
+		.addrSelect{
+			position: absolute;
+			left: 39px;
+			top: 30px;
+			width: 300px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			z-index: -1;
+			// display: none;
+			a{
+				float: left;
+				padding: 0 8px;
+				font-size: 12px;
+				color: #666;
+				line-height: 24px;
+				margin-right: 20px;
+			}
+			a:hover{
+				background-color: #f4f4f4;
+				color: #f10215;
+			}
+			.now{
+				background-color: #f10215 !important;
+				color: #fff !important;
+			}
+		}
+		p{
+			display: inline-block;
+			border-left: 1px solid #f1f1f1;
+			border-right: 1px solid #f1f1f1;
+			text-indent: 7px;
+			padding-right: 7px;
+			cursor: default;
+			.arrow-down{
+				margin-left: 7px;
+				top: -2px;
+			}
+		}
+	}
+}
+.topBar{
+	li{
+		position: relative;
+		float: left;
+		margin-right: 6px;
+		padding: 0 7px;
+		.arrow-down{
+			top: -2px;
+			margin-left: 9px;
+		}
+		.reg{
+			margin-left: 5px;
+			margin-right: 4px;
+			color: #f10215;
+		}
+		a{
+			color: #666;
+		}
+		a:hover{
+			color: #c81623;
+		}
+	}
+	.iconApp{
+		background: url(../imgs/app.png);
+		width: 11px;
+		height: 16px;
+		float: left;
+		margin-top: 7px;
+		margin-right: 6px;
+	}
+	.myJdList{
+		width: 265px;
+		padding: 10px 0 10px 15px;
+		border-top: 1px solid #f1f1f1;
+	}
+	.qrcode{
+		width: 190px;
+		height: 77px;
+		padding: 15px 0;
+		img{
+			float: left;
+			margin-left: 6px;
+			margin-top: 3px;
+			border: 1px solid #ccc;
+			padding: 2px;
+		}
+		h5{
+			float: left;
+			font-size: 12px;
+			line-height: 17px;
+			margin-left: 5px;
+			margin-top: 3px;
+		}
+		.comment{
+			float: left;
+			margin-left: 5px;
+			margin-top: 3px;
+			width: 94px;
+			color: #F10214;
+			line-height: 14px;
+		}
+		.download{
+			width: 25px;
+			height: 25px;
+			background:url(../imgs/sprite_mobile.png) no-repeat;
+			margin-left: 5px;
+			margin-top: 3px;
+		}
+		.iph{
+			background-position: 0 0;
+		}
+		.andr{
+			background-position: 0 -26px;
+		}
+		.ipad{
+			background-position: 0 -52px;
+		}
+	}
+	.dropD{
+		position: absolute;
+		z-index: 5;
+		display: none;
+		left: -1px;
+		top: 30px;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		.item{
+			width: 126px;
+			height: 24px;
+			float: left;
+			a{
+				float: left;
+				line-height: 24px;
+			}
+		}
+		.cusSer{
+			width: 170px;
+			padding: 10px 0;
+			.item{
+				width: 70px;
+				padding-left: 15px;
+			}
+			.item-title{
+				font-weight: bold;
+				padding-left: 15px;
+			}
+		}
+		dl{
+			float: left;
+			padding-left: 20px;
+			line-height: 24px;
+			width: 255px;
+			border-left: 1px solid #ccc;
+			dt{
+				font-weight: bold;
+				margin-bottom: 5px;
+			}
+			.item{
+				width: 45px;
+			}
+		}
+		.map-dl1{
+			width: 340px;
+			border: none;
+		}
+		.map-dl3{
+			width: 315px;
+		}
+	}
+	.map{
+		padding: 15px 0;
+	}
+	.dropD-right{
+		left: auto;
+		right: -1px;
+	}
+	.drop:hover{
+		background-color: #fff;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		padding-bottom: 1px;
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+	.drop:hover .dropD{
+		display: block;
+	}
+}
