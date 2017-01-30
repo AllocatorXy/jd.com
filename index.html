@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>京东(JD.COM)</title>
+	<script src="js/setMov.js"></script>
 </head>
 <link rel="stylesheet" href="css/base.css" />
 <link rel="stylesheet" href="css/global.css" />
@@ -32,7 +33,7 @@
 			</div>
 		</h2>
 		<ul class="topBar fr">
-			<li><a href="javascript:;">你好，请登录</a><a href="javascript:;"><span class="reg">免费注册</span></a></li>
+			<li><a href="javascript:;">你好，请登录</a><a class="reg" href="javascript:;">免费注册</a></li>
 			<li><a href="javascript:;">我的订单</a></li>
 			<li class="drop">
 				<a href="javascript:;">我的京东<i class="arrow-down"></a></i>
@@ -104,7 +105,7 @@
 					</div>
 				</div>
 			</li>
-			<li class="drop" style="margin-right: 0;">
+			<li class="drop">
 				<a href="javascript:;">网站导航<i class="arrow-down"></i></a>
 				<div class="dropD dropD-right wraper map">
 					<dl class="map-dl1"> 
@@ -189,6 +190,45 @@
 		</ul>
 	</div>
 </header>
+<!-- topAdBanner -->
+<div class="topAdBanner">
+	<div class="wraper">
+		<img src="imgs/topAd.png" alt="" />
+		<span class="close">×</span>
+	</div>
+</div>
+<!-- searchBar -->
+<div class="searchBar wraper clearFix">
+	<!-- logo -->
+	<a class="fl" href="index.html">
+		<h1><img src="imgs/logo.png" alt="" /></h1>
+	</a>
+	<!-- search -->
+	<div class="search fl">
+		<input type="text" placeholder="placeHolder" />
+		<div class="go">搜索</div>
+		<div class="tags">
+			<a class="red" href="javascript:;">送10元</a>
+			<a href="javascript:;">送10元</a>
+			<a href="javascript:;">送10元</a>
+			<a href="javascript:;">送10元</a>
+			<a href="javascript:;">送10元</a>
+			<a href="javascript:;">送10元</a>
+			<a href="javascript:;">送10元</a>
+			<a class="last" href="javascript:;">送10元送10元</a>
+		</div>
+	</div>
+	<!-- myCart -->
+	<div class="myCart fr">
+		<a href="javascript:;" class="cart fl">我的购物车</a>
+		<span class="cartBuble">99+</span>
+		<i class="arrow-right fl"></i>
+		<div class="myCartDropDown">
+			<img class="empty fl" src="imgs/cart-null.png" alt="" />
+			<p class="emptyP fl">购物车中还没有商品，赶紧选购吧！</p>
+		</div>
+	</div>
+</div>
 
 </body>
 <script src="js/topBar.js"></script>

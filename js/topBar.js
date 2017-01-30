@@ -30,6 +30,13 @@ function selectAddr() {
 }
 selectAddr();
 
-function topBarDropDown() {
-	
+function topAdHid() {
+    var oAdBanner = document.getElementsByClassName('topAdBanner')[0];
+    var oBtnClose = oAdBanner.getElementsByClassName('close')[0];
+	oBtnClose.onclick = function () {
+        setMov(oAdBanner,{opacity:0},function () {
+            oAdBanner.style.height = '0';
+        });
+    }
 }
+topAdHid();
